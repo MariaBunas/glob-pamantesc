@@ -39,3 +39,4 @@ textureLoader.load(
         console.error("Eroare la încărcarea texturii:", error);
     }
 );
+
