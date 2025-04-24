@@ -10,7 +10,7 @@ const material = new THREE.MeshBasicMaterial({ map: textureLoader.load('earth_te
 const globe = new THREE.Mesh(geometry, material);
 scene.add(globe);
 
-camera.position.z = 10;
+camera.position.z = 5;
 
 function animate() {
     requestAnimationFrame(animate);
