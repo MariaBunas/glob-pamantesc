@@ -11,7 +11,7 @@ const geometry = new THREE.SphereGeometry(5, 32, 32); // Definim geometria
 // Încărcarea texturii globului 🌍
 const textureLoader = new THREE.TextureLoader();
 const material = new THREE.MeshBasicMaterial({ 
-    map: textureLoader.load('https://username.github.io/repository-name/earth_texture.jpg') 
+    map: textureLoader.load('https://mariabunas.github.io/glob-pamantesc/earth_texture.jpg') 
 });
 
 // Crearea obiectului Mesh cu geometria și materialul
