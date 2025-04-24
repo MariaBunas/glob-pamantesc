@@ -19,3 +19,16 @@ function animate() {
 }
 
 animate();
+
+document.addEventListener("click", () => {
+    let scale = 5;
+    let interval = setInterval(() => {
+        if (scale >= 15) {
+            clearInterval(interval);
+            globe.geometry = new THREE.PlaneGeometry(20, 10); // Se transformă într-o hartă
+        } else {
+            globe.scale.set(scale, scale, scale);
+            scale += 0.5;
+        }
+    }, 100);
+});
