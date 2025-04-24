@@ -1,5 +1,9 @@
 // Inițializarea scenei, camerei și renderer-ului
 const scene = new THREE.Scene();
+
+// Setează fundalul scenei pentru a verifica randarea
+scene.background = new THREE.Color(0x123456);
+
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('globCanvas') });
 renderer.setSize(window.innerWidth, window.innerHeight);
